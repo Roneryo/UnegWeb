@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+<html>
+<head>
+
+	<title>Bienvenido!</title>
+	<link href="{% static "css/blog.css" %}" rel="stylesheet">
+</head>
+	<body>
+		<h1>Una persona dijo...</h1>
+			<div>
+
+			Hey! Estoy aqui!! <br />
+		
+				<h1>Bienvenido! <br/></h1>
+				<strong>{{ boldmessage }}</strong><br />
+			</div>	
+			<div>
+				<a href="/about">About</a><br />
+				<img src="{% static "images/code.png"%}"
+				alt="Code Picture"/>
+			</div>	
+	</body>
+</html>

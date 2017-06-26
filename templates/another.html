@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+	<head>
+		<meta charset="UTF-8">
+		<title>¿Otra pagina web?</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+	</head>
+	<body>
+		<div id="app">
+			<h1>Este es un ejemplo.</h1>
+		</div>
+		<p></p>
+		<a class="btn btn-primary" href="/about">Volver.</a>
+		<script src="{% static 'bootstrap/js/jquery.js' %}"></script>
+		<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+	</body>
+</html>
+<!--
+		<script src="https://unpkg.com/react@15/dist/react.js"></script>
+		<script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+
+		<script src="{% static 'js/app.js' %}"></script>
+-->

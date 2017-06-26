@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>About</title>
+		<link rel="stylesheet" href="{% static 'materialize/css/materialize.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+	</head>
+	<body>
+
+			<nav>
+			  <div class="nav-wrapper blue">
+			    <a href="" class="brand-logo">  Logo</a>
+			    <ul id="nav-mobile" class="right hide-on-med-and-down">
+			      <li><a href="/another">sass</a></li>
+			      <li><a href="/hola">sass <span class="new badge">4</span></a></li>
+			      <li><a href="admin">sass</a></li>
+			    </ul>
+			  </div>
+			</nav>	   		
+			<br/>
+		<h1 class="container">Hola!</h1>
+		<br/>
+		<div class="container">
+			<div class="row">
+				<div class="col m12 ">
+					<div class="card-panel blue">
+						<h5 class="myid">¡Bienvenido a mi small-web!</h5>
+					</div>
+				</div>
+
+				<div class="col m6 ">
+					<div class="card-panel pink">
+						<h5 class="myid">Porfavor registrese.</h5>
+						<form action="">
+							{{form}}
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+<div class="container">
+	<div class="row">
+		  <div class="divider"></div>
+		  <div class="section">
+		    <h5>Section 1</h5>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quos sequi excepturi aspernatur blanditiis. Delectus reprehenderit beatae ratione. Beatae, repudiandae inventore natus consectetur tenetur fugiat labore et exercitationem omnis quo.</p>
+		    <a class= " waves-effect waves-light btn-large" href="/another"> <h5>Ver mas</h5></a>
+		  </div>
+		  <div class="divider"></div>
+		  <div class="section">
+		    <h5>Section 2</h5>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam facilis suscipit est doloremque, nam enim, ad atque repellat recusandae, repudiandae libero. Distinctio nihil repellat facilis laboriosam quae delectus dolores inventore.</p>
+		    <a class= "btn-large" href="/hola"><h5>Ver mas</h5></a>
+		  </div>
+		  <div class="divider"></div>
+		  <div class="section">
+		    <h5>Section 3</h5>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis vero distinctio voluptatibus ullam, minima, eum quos cumque, repellat labore totam iste ex dicta. Voluptatem velit ipsam ratione nulla sed. Nemo!</p>
+		    <a class= "btn-large " href="/mobile"> <h5>Ver mas</h5></a>
+		  </div>
+		</div>
+	</div>
+   		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="{% static 'materialize/js/materialize.js' %}"></script>
+		<script src="{% static 'materialize/js/materialize.min.js' %}"></script>
+		<!-->	<script src="{% static 'js/app.js' %}">
+		</script></!-->
+		<script src="{% static 'js/MyAwesomeReactComponent.js' %}">
+		</script>
+		
+	</body>
+</html>

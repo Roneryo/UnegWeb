@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mobile Design</title>
+
+	<link rel="stylesheet" href="{% static 'materialize/css/materialize.min.css' %}">
+</head>
+	<nav>
+		  <div class="nav-wrapper blue">
+		    <a href="" class="brand-logo">  Logo</a>
+		    <ul id="nav-mobile" class="right hide-on-med-and-down">
+		      <li><a href="/another">sass</a></li>
+		      <li><a href="/hola">sass <span class="new badge">4</span></a></li>
+		      <li><a href="admin">sass</a></li>
+		    </ul>
+		  </div>
+	</nav>
+	<h1 class="container m5">Bienvenido!</h1><br/>
+	<div class="container">
+	<a  class="btn-large circle" href="/about" ><h5>Regresar</h5></a>
+	</div>
+   	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="{% static 'materialize/js/materialize.js' %}"></script>
+	<script src="{% static 'materialize/js/materialize.min.js' %}"></script>
+	<script>
+
+
+  $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 300
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true, // Choose whether you can drag to open on touch screens,
+      onOpen: function(el) { /* Do Stuff* / }, // A function to be called when sideNav is opened
+      onClose: function(el) { /* Do Stuff* / }, // A function to be called when sideNav is closed
+    }
+  );</script>
+</body>
+</html>
