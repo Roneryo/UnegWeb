@@ -1,9 +1,5 @@
-from __future__ import unicode_literals
+from django.contrib import admin
 
-from django.db import models
-# Create your models here.
-class Estudiante(models.Model):
-	nombre=models.CharField(max_length=20)
-	apellido=models.CharField(max_length=20)
-	edad=models.IntegerField()
-	
+from .models import Estudiante
+# Register your models here.
+admin.site.register(Estudiante)
