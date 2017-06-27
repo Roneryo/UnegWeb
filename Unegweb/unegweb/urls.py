@@ -15,13 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from unegweb.views import index,about,another,mobile
-
+from .views import index,about,another,mobile
+from Estudiante.views import Registro
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^hola', index),
     url(r'^about', about),
     url(r'^another', another),
     url(r'^mobile', mobile),
+    url(r'^registro', Registro),
     
 ]
