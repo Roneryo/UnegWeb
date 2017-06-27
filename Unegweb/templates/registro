@@ -1,0 +1,7 @@
+
+<h1>Registrate</h1>
+
+<form>
+	{{form}}
+	<button>Registrar</button>
+</form>
